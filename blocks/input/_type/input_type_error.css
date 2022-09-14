@@ -1,0 +1,9 @@
+.input_type_error {
+  border-bottom: 1px solid #ff6500;
+  margin: 20px 20px 0;
+}
+
+.input_type_error:after {
+  content: '!';
+  color: red;
+}

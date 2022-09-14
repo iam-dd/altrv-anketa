@@ -1,0 +1,10 @@
+.button_type_submit {
+  color: #ff6500;
+  border: 1px solid #ff6500;
+}
+
+.button_type_submit:hover {
+  background-color: #ff6500;
+  cursor: pointer;
+  color: #fff;
+}

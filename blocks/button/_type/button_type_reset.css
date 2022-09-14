@@ -1,0 +1,10 @@
+.button_type_reset {
+  color: #15a1e5;
+  border: 1px solid #15a1e5;
+}
+
+.button_type_reset:hover {
+  background-color: #15a1e5;
+  cursor: pointer;
+  color: #fff;
+}

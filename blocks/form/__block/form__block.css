@@ -1,0 +1,11 @@
+.form__block {
+  
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 10px;
+  color: #1e1b1a;
+ 
+
+}
+
