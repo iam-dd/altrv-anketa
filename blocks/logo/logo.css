@@ -4,5 +4,6 @@
     animation-name: logo-animation;
     animation-duration: 6s;
     animation-iteration-count: 1;
+    animation-delay: 0;
 }
 
