@@ -1,7 +1,11 @@
 @import url(./vendors/fonts/fonts.css);
 @import url(./blocks/page/page.css);
   @import url(./blocks/header/header.css);
+
+  /* LOGO */
   @import url(./blocks/logo/logo.css);
+  @import url(./blocks/logo/animation/animation.css);
+
   @import url(./blocks/title/title.css);
 /* BLOCK SELECT */
   @import url(./blocks/select/select.css);

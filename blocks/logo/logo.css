@@ -1,0 +1,8 @@
+.logo {
+  opacity: .8;
+    margin: 10px auto 10px;
+    animation-name: logo-animation;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
