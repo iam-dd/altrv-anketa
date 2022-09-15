@@ -1,0 +1,9 @@
+.select__button_gender_both {
+  background-image: url(../../../../images/plus.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.select__button_gender_both:hover > .select {
+  border: 1px solid red;
+}

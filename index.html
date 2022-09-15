@@ -14,150 +14,152 @@
   </header>
 
 <body class="page">
-  <div class="select">
-    <div class="select__radio-block">
-    <img src="./images/men.svg" class="select__image">
-    <input  type="radio" id="radio-men" class="select__radio">
-    <label for="radio-men" class="select__item select__item_gender_men" id="1"></label>
-  </div>
-  <div class="select__radio-block">
-    <img src="./images/women.svg" class="select__image">
-    <input  type="radio" id="radio-women" class="select__radio">
-    <label for="radio-women" class="select__item select__item_gender_women" id="2"></label>
-  </div>
-  </div>
-  <form class="form">
+  <div class="select" id="select">
+
+<button class="select__button select__button_gender_men" type="button" id="button_men"></button>
+<button class="select__button select__button_gender_both" type="button" id="button_both"></button>
+<button class="select__button select__button_gender_women" type="button" id="button_women"></button>
+
+
+    </div>
+    
+
+  <form class="form" novalidate>
 
     <!-- MEN -->
     <fieldset class="form__block form__block_gender_men">
-      <legend>ФИО</legend>
-      <input class="input" id="input__name" type="text" minlength="2" maxlength="8" novalidate required
+      <legend class="form__legend">ФИО</legend class="form__legend">
+      <input class="input" id="input__name" type="text" minlength="2" maxlength="8" required
         placeholder="Имя">
       <span class="input__name-error"></span>
-      <input class="input" id="input__secondname" type="text" minlength="2" maxlength="14" novalidate required
+      <input class="input" id="input__secondname" type="text" minlength="2" maxlength="14" required
         placeholder="Фамилия">
       <span class="input__secondname-error"></span>
-      <input class="input" id="input__patronymic" type="text" minlength="2" maxlength="14" novalidate
+      <input class="input" id="input__patronymic" type="text" minlength="2" maxlength="14"
         placeholder="Отчество">
       <span class="input__patronymic-error"></span>
+      <input class="input__gender_men" id="input__gender_men" type="checkbox" checked>
+      <label for="input__gender_men">Мужчина</label>
+      <input class="input__gender_women" id="input__gender_women" type="checkbox">
+      <label for="women">Женщина</label>
     </fieldset>
     <fieldset class="form__block form__block_gender_men">
-      <legend>Паспорт</legend>
-      <input class="input" id="input__serial" type="text" minlength="2" maxlength="8" novalidate required
+      <legend class="form__legend">Паспорт</legend class="form__legend">
+      <input class="input" id="input__serial" type="text" minlength="2" maxlength="8" required
         placeholder="Серия">
       <span class="input__serial-error"></span>
-      <input class="input" id="input__number" type="number" minlength="5" maxlength="14" novalidate required
+      <input class="input" id="input__number" type="number" minlength="5" maxlength="14" required
         placeholder="Номер">
       <span class="input__number-error"></span>
-      <input class="input" id="input__issuedby" type="text" minlength="2" maxlength="14" novalidate
+      <input class="input" id="input__issuedby" type="text" minlength="2" maxlength="14"
         placeholder="Кем выдан">
       <span class="input__issuedby-error"></span>
-      <input class="input" id="input__date-issue" type="date" minlength="2" maxlength="14" novalidate
+      <input class="input" id="input__date-issue" type="date" minlength="2" maxlength="14"
         placeholder="Дата выдачи">
       <span class="input__date-issue-error"></span>
-      <input class="input" id="input__dob" type="date" minlength="2" maxlength="14" novalidate
+      <input class="input" id="input__dob" type="date" minlength="2" maxlength="14"
         placeholder="Дата рождения">
       <span class="input__dob-error"></span>
     </fieldset>
     <fieldset class="form__block form__block_gender_men">
-      <legend>Адрес регистрации</legend>
-      <input class="input" id="input__region" type="text" minlength="10" maxlength="14" novalidate required
+      <legend class="form__legend">Адрес регистрации</legend class="form__legend">
+      <input class="input" id="input__region" type="text" minlength="10" maxlength="14" required
         placeholder="Область">
       <span class="input__region-error"></span>
-      <input class="input" id="input__city" type="text" minlength="2" maxlength="12" novalidate required
+      <input class="input" id="input__city" type="text" minlength="2" maxlength="12" required
         placeholder="Город">
       <span class="input__city-error"></span>
-      <input class="input" id="input__postindex" type="number" minlength="4" maxlength="14" novalidate
+      <input class="input" id="input__postindex" type="number" minlength="4" maxlength="14"
         placeholder="Индекс">
       <span class="input__postindex-error"></span>
-      <input class="input" id="input__street" type="text" minlength="4" maxlength="14" novalidate placeholder="Улица">
+      <input class="input" id="input__street" type="text" minlength="4" maxlength="14" placeholder="Улица">
       <span class="input__street-error"></span>
-      <input class="input" id="input__housenumber" type="text" minlength="2" maxlength="4" novalidate placeholder="Дом">
+      <input class="input" id="input__housenumber" type="text" minlength="2" maxlength="4" placeholder="Дом">
       <span class="input__housenumber-error"></span>
-      <input class="input" id="input__apartment" type="number" minlength="2" maxlength="4" novalidate
+      <input class="input" id="input__apartment" type="number" minlength="2" maxlength="4"
         placeholder="Квартира">
       <span class="input__apartment-error"></span>
     </fieldset>
     <fieldset class="form__block form__block_gender_men">
-      <legend>Контактная информация</legend>
-      <input class="input" id="input__tel" type="tel" minlength="10" maxlength="14" novalidate required
+      <legend class="form__legend">Контактная информация</legend class="form__legend">
+      <input class="input" id="input__tel" type="tel" minlength="10" maxlength="14" required
         placeholder="Телефон">
       <span class="input__tel-error"></span>
-      <input class="input" id="input__email" type="email" minlength="7" maxlength="20" novalidate required
+      <input class="input" id="input__email" type="email" minlength="7" maxlength="20" required
         placeholder="Электронная почта">
       <span class="input__email-error"></span>
-      <input class="input" id="input__job" type="text" minlength="2" maxlength="14" novalidate
+      <input class="input" id="input__job" type="text" minlength="2" maxlength="14"
         placeholder="Место работы">
       <span class="input__job-error"></span>
-      <input class="input" id="input__position" type="text" minlength="2" maxlength="20" novalidate
+      <input class="input" id="input__position" type="text" minlength="2" maxlength="20"
         placeholder="Должность">
       <span class="input__position-error"></span>
     </fieldset>
 
     <!-- WOMEN -->
     <fieldset class="form__block form__block_gender_women">
-      <legend>ФИО</legend>
-      <input class="input" id="input__name" type="text" minlength="2" maxlength="8" novalidate required
+      <legend class="form__legend">ФИО</legend class="form__legend">
+      <input class="input" id="input__name_women" type="text" minlength="2" maxlength="8" required
         placeholder="Имя">
-      <span class="input__name-error"></span>
-      <input class="input" id="input__secondname" type="text" minlength="2" maxlength="14" novalidate required
+      <span class="input__name_women-error"></span>
+      <input class="input" id="input__secondname_women" type="text" minlength="2" maxlength="14" required
         placeholder="Фамилия">
-      <span class="input__secondname-error"></span>
-      <input class="input" id="input__patronymic" type="text" minlength="2" maxlength="14" novalidate
+      <span class="input__secondname_women-error"></span>
+      <input class="input" id="input__patronymic_women" type="text" minlength="2" maxlength="14"
         placeholder="Отчество">
-      <span class="input__patronymic-error"></span>
+      <span class="input__patronymic_women-error"></span>
     </fieldset>
     <fieldset class="form__block form__block_gender_women">
-      <legend>Паспорт</legend>
-      <input class="input" id="input__serial" type="text" minlength="2" maxlength="8" novalidate required
+      <legend class="form__legend">Паспорт</legend class="form__legend">
+      <input class="input" id="input__serial_women" type="text" minlength="2" maxlength="8" required
         placeholder="Серия">
-      <span class="input__serial-error"></span>
-      <input class="input" id="input__number" type="number" minlength="5" maxlength="14" novalidate required
+      <span class="input__serial_women-error"></span>
+      <input class="input" id="input__number_women" type="number" minlength="5" maxlength="14" required
         placeholder="Номер">
-      <span class="input__number-error"></span>
-      <input class="input" id="input__issuedby" type="text" minlength="2" maxlength="14" novalidate
+      <span class="input__number_women-error"></span>
+      <input class="input" id="input__issuedby_women" type="text" minlength="2" maxlength="14"
         placeholder="Кем выдан">
-      <span class="input__issuedby-error"></span>
-      <input class="input" id="input__date-issue" type="date" minlength="2" maxlength="14" novalidate
+      <span class="input__issuedby_women-error"></span>
+      <input class="input" id="input__date-issue_women" type="date" minlength="2" maxlength="14"
         placeholder="Дата выдачи">
-      <span class="input__date-issue-error"></span>
-      <input class="input" id="input__dob" type="date" minlength="2" maxlength="14" novalidate
+      <span class="input__date-issue_women-error"></span>
+      <input class="input" id="input__dob_women" type="date" minlength="2" maxlength="14"
         placeholder="Дата рождения">
-      <span class="input__dob-error"></span>
+      <span class="input__dob_women-error"></span>
     </fieldset>
     <fieldset class="form__block form__block_gender_women">
-      <legend>Адрес регистрации</legend>
-      <input class="input" id="input__region" type="text" minlength="10" maxlength="14" novalidate required
+      <legend class="form__legend">Адрес регистрации</legend class="form__legend">
+      <input class="input" id="input__region_women" type="text" minlength="10" maxlength="14" required
         placeholder="Область">
       <span class="input__region-error"></span>
-      <input class="input" id="input__city" type="text" minlength="2" maxlength="12" novalidate required
+      <input class="input" id="input__city_women" type="text" minlength="2" maxlength="12" required
         placeholder="Город">
-      <span class="input__city-error"></span>
-      <input class="input" id="input__postindex" type="number" minlength="4" maxlength="14" novalidate
+      <span class="input__city_women-error"></span>
+      <input class="input" id="input__postindex_women" type="number" minlength="4" maxlength="14"
         placeholder="Индекс">
-      <span class="input__postindex-error"></span>
-      <input class="input" id="input__street" type="text" minlength="4" maxlength="14" novalidate placeholder="Улица">
-      <span class="input__street-error"></span>
-      <input class="input" id="input__housenumber" type="text" minlength="2" maxlength="4" novalidate placeholder="Дом">
-      <span class="input__housenumber-error"></span>
-      <input class="input" id="input__apartment" type="number" minlength="2" maxlength="4" novalidate
+      <span class="input__postindex_women-error"></span>
+      <input class="input" id="input__street_women" type="text" minlength="4" maxlength="14" placeholder="Улица">
+      <span class="input__street_women-error"></span>
+      <input class="input" id="input__housenumber_women" type="text" minlength="2" maxlength="4" placeholder="Дом">
+      <span class="input__housenumber_women-error"></span>
+      <input class="input" id="input__apartment_women" type="number" minlength="2" maxlength="4"
         placeholder="Квартира">
-      <span class="input__apartment-error"></span>
+      <span class="input__apartment_women-error"></span>
     </fieldset>
     <fieldset class="form__block form__block_gender_women">
-      <legend>Контактная информация</legend>
-      <input class="input" id="input__tel" type="tel" minlength="10" maxlength="14" novalidate required
+      <legend class="form__legend">Контактная информация</legend class="form__legend">
+      <input class="input" id="input__tel_women" type="tel" minlength="10" maxlength="14" required
         placeholder="Телефон">
-      <span class="input__tel-error"></span>
-      <input class="input" id="input__email" type="email" minlength="7" maxlength="20" novalidate required
+      <span class="input__tel_women-error"></span>
+      <input class="input" id="input__email_women" type="email" minlength="7" maxlength="20" required
         placeholder="Электронная почта">
-      <span class="input__email-error"></span>
-      <input class="input" id="input__job" type="text" minlength="2" maxlength="14" novalidate
+      <span class="input__email_women-error"></span>
+      <input class="input" id="input__job_women" type="text" minlength="2" maxlength="14"
         placeholder="Место работы">
-      <span class="input__job-error"></span>
-      <input class="input" id="input__position" type="text" minlength="2" maxlength="20" novalidate
+      <span class="input__job_women-error"></span>
+      <input class="input" id="input__position_women" type="text" minlength="2" maxlength="20"
         placeholder="Должность">
-      <span class="input__position-error"></span>
+      <span class="input__position_women-error"></span>
     </fieldset>
     <span class="message"></span>
     <div class="buttons">
