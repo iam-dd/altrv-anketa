@@ -1,11 +1,9 @@
 .button {
-  
   width: 80px;
   background: none;
-  
   min-height: 30px;
   width: 40%;
   margin: 20px;
-
+  display: none;
 }
 

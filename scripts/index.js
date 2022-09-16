@@ -10,6 +10,7 @@ const fieldsetsMen = Array.from(document.querySelectorAll('.form__block_gender_m
 const radioWomen = document.getElementById('button_women');
 const radioMen = document.getElementById('button_men');
 const radioBoth = document.getElementById('button_both');
+const buttonsSubmit = Array.from(document.querySelectorAll('.button'));
 
 function showForm(fieldset) {
   fieldset.forEach((element) => {
@@ -23,18 +24,28 @@ function hideForm(fieldsets) {
   });
 };
 
+function showButton() {
+  buttonsSubmit.forEach((element) => {
+    element.classList.add('button_state_show');
+  })
+};
+
 
 radioWomen.addEventListener('click', (evt) => {
   showForm(fieldsetsWomen);
   hideForm(fieldsetsMen);
+  showButton();
 });
 
 radioMen.addEventListener('click', (evt) => {
   showForm(fieldsetsMen);
   hideForm(fieldsetsWomen);
+  showButton();
 });
 
 radioBoth.addEventListener('click', (evt) => {
   showForm(fieldsetsMen);
   showForm(fieldsetsWomen);
+  showButton();
 });
+

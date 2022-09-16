@@ -1,4 +1,8 @@
 .select__button_gender_women {
   background-image: url(../../../../images/women.svg);
   background-size: cover;
+  animation-name: button-gender-women;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  
 }

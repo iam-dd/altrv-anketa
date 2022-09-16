@@ -2,8 +2,12 @@
   opacity: .8;
     margin: 10px auto 10px;
     animation-name: logo-animation;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     animation-delay: 0;
+    animation-play-state: paused;
 }
 
+.logo:hover {
+animation-play-state: running;
+}

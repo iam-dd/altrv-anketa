@@ -1,14 +1,16 @@
 @import url(./vendors/fonts/fonts.css);
 @import url(./blocks/page/page.css);
   @import url(./blocks/header/header.css);
+  @import url(./blocks/animation/animation.css);
 
   /* LOGO */
   @import url(./blocks/logo/logo.css);
-  @import url(./blocks/logo/animation/animation.css);
+  
 
   @import url(./blocks/title/title.css);
 /* BLOCK SELECT */
   @import url(./blocks/select/select.css);
+  @import url(./blocks/prompt/prompt.css);
  
 /* SELECT BUTTONS */
   @import url(./blocks/select/__button/select__button.css);
@@ -29,15 +31,14 @@
       @import url(./blocks/input/input.css);
       @import url(./blocks/input/_type/input_type_error.css);
       @import url(./blocks/input/_error/input_error_visible.css);
-      @import url(./blocks/input/__gender/input__gender_men.css);
-      @import url(./blocks/input/__gender/input__gender_women.css);
-
+  
 /* BUTTONS */
     @import url(./blocks/button/button.css);
     @import url(./blocks/buttons/buttons.css);
     @import url(./blocks/button/_state/button_state_disable.css);
     @import url(./blocks/button/_type/button_type_reset.css);
     @import url(./blocks/button/_type/button_type_submit.css);
+    @import url(./blocks/button/_state/button_state_show.css);
     
 
     @import url(./blocks/message/message.css);

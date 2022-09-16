@@ -1,0 +1,44 @@
+@keyframes logo-animation {
+  from {
+    rotate: y 0;
+  }
+  to {
+    rotate: y 360deg;
+  }
+}
+
+@keyframes button-both {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes button-gender-men {
+  from {
+   translate: 0;
+  }
+  50% {
+    translate: 10px;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes button-gender-women {
+  from {
+   translate: 0;
+  }
+  50% {
+    translate: -10px;
+  }
+  to {
+    translate: 0;
+  }
+}

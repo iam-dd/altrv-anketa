@@ -2,8 +2,14 @@
   background-image: url(../../../../images/plus.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  animation-name: button-both;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  margin-top: 15px;
 }
 
-.select__button_gender_both:hover > .select {
-  border: 1px solid red;
+.select__button_gender_both:hover {
+  
+  animation-play-state: paused; 
+
 }
